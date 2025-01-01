@@ -30,7 +30,7 @@ const fromLeft = {
    duration: 1000,
    distance: "30%",
    origin: 'left',
-   viewFactor: 1,
+   viewFactor: .3,
 }
 
 const fromRight = {

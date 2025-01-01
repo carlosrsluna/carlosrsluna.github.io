@@ -10,7 +10,7 @@ header {
    position: fixed;
    top: 0px;
    left: 0px;
-   z-index: 10000;
+   z-index: 100000000;
 
    background-color: var(--color-background);
 } 
