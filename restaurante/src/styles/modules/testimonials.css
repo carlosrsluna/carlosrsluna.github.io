@@ -1,0 +1,77 @@
+#testimonials {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+#testimonials > div {
+   margin: 100px auto;
+   display: flex;
+   gap: 20px;
+}
+
+#testimonials>div>div {
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+}
+
+#testimonials>div > div> div h1 {
+   font-size: 30px;
+   color: var(--color-primary-1);;
+}
+#testimonials>div>div> div h2 {
+   font-size: 34px;
+}
+#testimonials a {
+   width: fit-content;
+   padding: 10px 40px;
+   margin-top: 30px;
+}
+
+.testimonial {
+   display: flex;
+   align-items: center;
+   max-width: 800px;
+   margin-top: 30px;
+
+   border-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 10px;
+   
+}
+
+.testimonial img {
+   width: 130px;
+   height: 130px;
+}
+
+.testimonial > div > div > div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin-bottom: 10px;
+}.testimonial>div>div>div i {
+   color: var(--color-primary-3);
+}#testimonials .testimonial > div > div> div h2 {
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.testimonial p {
+   text-align: justify;
+}
+
+@media screen and (max-width: 1030px) {
+   #testimonials > div > img {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 530px){
+   .testimonial {
+      flex-flow: column;
+   }
+}
+

@@ -1,0 +1,136 @@
+#home {
+   margin-top: 79.2px;
+   width: 100%;
+   height: calc(100vh - 79.2px);
+
+   display: grid;
+   grid-template-columns: 1fr minmax(300px, 1fr);
+
+   align-items: center;
+   gap: 10px;
+
+   position: relative;
+}
+
+#home-content {
+   justify-self: center;
+
+   margin: 30px 0px;
+}
+
+#home-content > h1 {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 20px;
+   color: #fff;
+   background-color: var(--color-primary-1);
+   border-radius: 15px;
+
+   transform: rotate(-2deg);
+}
+
+#home-content > div {
+   margin: 30px 0px;
+   max-width: 710px;
+}
+#home-content > div h1{
+   text-transform: uppercase;
+   margin: 10px 0px;
+   font-size: 50px;
+}
+
+#home-content > div p {
+   font-size: 18px;
+   font-weight: 500;
+   text-align: justify;
+}
+
+#home-content > a {
+   display: inline-block;
+
+   padding: 10px 25px;
+   background-color: var(--color-primary-2);
+   color: #fff;
+
+   font-size: 22px;
+   font-weight: 600;
+   border-radius: 15px;
+   
+   transition: .3s ease-in-out;
+}#home-content>a:hover {
+   padding: 10px 33px;
+}
+
+#home-hero {
+   height: 100%;
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#home-hero > img {
+   align-self: center;
+   margin-top: 50px;
+
+   min-width: 500px;
+   width: 60%;
+   height: auto;
+
+   border-radius: 50%;
+   border: 25px solid var(--color-primary-2);
+   z-index: 2;
+}#home-hero #figure-1 {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   z-index: 0;
+   
+   height: 60%;
+   width: 35%;
+   border-radius: 15%;
+   border-bottom-right-radius: 0px;
+   border-bottom-left-radius: 30px;
+   background-color: var(--color-primary-1);
+   
+   margin-bottom: -10px;
+   margin-right: -10px;
+}
+
+@media screen and (max-width: 1140px) {
+   #home-content>div h1 {
+      font-size: 40px;
+   }
+   #home-content>div p {
+      font-size: 16px;
+      max-width: 450px;
+   }
+}
+
+@media screen and (max-width: 960px) {
+   #home {
+      grid-template-columns: 1fr;
+   }
+   #home-hero {
+      display: none;
+   }
+
+   #home-content {
+      width: auto;
+      justify-self: center;
+      text-align: center;
+   }#home-content > div > p {
+      margin: auto;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   #home-content>div h1 {
+      font-size: 35px;
+   }
+
+   #home-content > h1, #home-content > a {
+      font-size: 18px;
+   }
+}

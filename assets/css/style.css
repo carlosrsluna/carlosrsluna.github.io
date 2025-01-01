@@ -1,0 +1,48 @@
+/*
+   Variables and the other modules, in order
+
+   Variáveis e a importação dos módulos, em ordem
+
+   Algumas variáveis são redundantes, mas servem para
+   caso seja feita uma mudança drástica no design da 
+   página.
+*/
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url(reset.css);
+@import url(s1_header.css);
+@import url(start.css);
+@import url(about.css);
+@import url(knowledge.css);
+@import url(projects.css);
+@import url(modal.css);
+@import url(footer.css);
+
+:root {
+   --back-start: #00000066;
+   --back-about: #f0f0f0;
+   --back-knowledge: #fff;
+   --back-projects: #f0f0f0;
+   --back-cards: #fff;
+   --back-footer: linear-gradient(352deg, #081819 0%, #0b2122 100%);
+
+   --color-details: #5c9674;
+
+   --color-h1: #000;
+   --color-h2: #000;
+   --color-p: #000;
+
+   --card-font-color: #081819;
+   --card-font-family: 'Montserrat';
+   --card-p-font-family: 'Roboto Slab';
+   --card-details-color: #081819;
+
+   --font-h1: 'Montserrat', Arial, sans-serif;
+   --font-h2: 'Montserrat', Arial, sans-serif;
+   --font-p: 'Lora', Arial, sans-serif;
+
+   --max-width: 900px;
+
+   --modal-font-family: 'Poppins';
+}

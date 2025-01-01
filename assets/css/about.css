@@ -1,0 +1,196 @@
+div.about {
+   text-align: center;
+
+   /* Colocar padding */
+}
+
+div.about h1 {
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+div.timeline {
+   max-width: var(--max-width);
+   margin: auto;
+
+   display: grid;
+   grid-template-columns: 1fr auto 1fr;
+   grid-template-rows: auto repeat(7, minmax(100px, auto)) auto;
+   gap: 25px 35px;
+
+   align-items: center;
+
+   transition: all 600ms ease-in-out
+}
+
+div.timeline div.line {
+   width: 4px;
+   background-color: var(--color-details);
+
+   align-self: center;
+
+   grid-row: 1 / span 9;
+   grid-column: 2;
+   z-index: 0;
+
+   justify-self: center;
+   height: 100%;
+}
+
+div.timeline div.circle {
+   width: 50px;
+   height: 50px;
+
+   border-radius: 50%;
+   border: 5px solid var(--color-details);
+   background-color: #fff;
+   box-shadow: 0px 0px 10px 0px rgba(120, 104, 40, 0.9);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   z-index: 1;
+   grid-column: 2;
+
+   align-self: center;
+}
+
+div.timeline div.circle i {
+   font-size: 25px;
+   color: var(--color-details);
+}
+
+div.timeline div.text {
+   align-self: self-start;
+   text-align: left;
+}
+
+div.timeline div.text h2 {
+   display: inline-block;
+
+   border-bottom: 3px solid var(--color-details);
+   padding-bottom: 4px;
+   margin-bottom: 5px;
+
+   font-size: 22px;
+}
+
+div.timeline div.text p {
+   text-align: justify;
+
+   font-weight: 500;
+   font-size: 18px;
+}
+
+/* Posicionando cada circulo e caixa de texto */
+div.timeline div.c0 {
+   grid-row: 1;
+   align-self: self-start;
+}
+
+div.timeline div.c1 {
+   grid-row: 3;
+}
+
+div.timeline div.c2 {
+   grid-row: 5;
+}
+
+div.timeline div.c3 {
+   grid-row: 7;
+}
+
+div.timeline div.c4 {
+   grid-row: 9;
+   align-self: self-end;
+}
+
+/* Posicionando caixas de texto */
+div.timeline div.t0 {
+   grid-row: 1;
+   grid-column: 3;
+
+   align-self: center;
+}
+
+div.timeline div.t1 {
+   grid-row: 3;
+   grid-column: 1;
+
+   
+}
+
+div.timeline div.t2 {
+   grid-row: 5;
+   grid-column: 3;
+
+   
+}
+
+div.timeline div.t3 {
+   grid-row: 7;
+   grid-column: 1;
+}
+
+div.timeline div.t4 {
+   grid-row: 9;
+   grid-column: 3;
+
+   align-self: center;
+}
+
+div.timeline div.t4 h2, div.timeline div.t0 h2 {
+   border: 0px;
+   padding: 0px;
+}
+
+/* Reposicionando os elementos de acordo com a tela */
+
+@media screen and (max-width: 800px) {
+   div.about h1 {
+      text-align: left;
+
+      max-width: 600px;
+      margin: 40px auto;
+   }
+
+   div.timeline {
+      max-width: 600px;
+
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto repeat(7, minmax(200px, auto)) auto;
+   }
+
+   div.timeline div.line {
+      grid-column: 1;
+   }
+
+   div.timeline div.circle {
+      grid-column: 1;
+   }
+
+   div.text p {
+      font-size: 15px;
+   }
+
+   div.timeline div.t0 {
+      grid-column: 2;
+   }
+
+   div.timeline div.t1 {
+      grid-column: 2;
+   }
+
+   div.timeline div.t2 {
+      grid-column: 2;
+   }
+
+   div.timeline div.t3 {
+      grid-column: 2;
+   }
+
+   div.timeline div.t4 {
+      grid-column: 2;
+   }
+}

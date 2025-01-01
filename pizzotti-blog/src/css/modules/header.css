@@ -1,0 +1,124 @@
+/*
+      Yes,
+      I know,
+      it's a mess :)
+*/
+
+/* Configs de reset específicas*/
+header a {
+   color: white;
+   text-decoration: none;
+}
+
+header a:hover{
+   text-decoration: underline;
+}
+
+header span.material-symbols-outlined {
+   color: white;
+   display: none;
+}
+
+/* Primeira seção do header */
+header nav.top-nav {
+   background-color: #4267B2;
+   padding: 20px;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+header nav.top-nav ul {
+   display: flex;
+   align-items: center;
+}
+
+header nav.top-nav ul li{
+   display: inline-block;
+   margin: 0px 20px;
+}
+
+header nav.top-nav ul  li:last-child {
+   margin-right: 0px;
+}
+
+
+@media screen and (max-width: 700px) {
+   header nav.top-nav ul {
+      display: none;
+      flex-flow: column nowrap;
+   }
+
+   header nav.top-nav ul li {
+      padding: 10px;
+      margin: 0px;
+   }
+
+   header span.material-symbols-outlined {
+      display: flex;
+      align-items: center;
+   }
+
+   header nav.top-nav {
+      flex-flow: column;
+      align-items: center;
+   }
+}
+
+@media screen and (min-width: 701px) {
+   header nav.top-nav ul  {
+      display: flex !important; 
+      flex-flow: row nowrap ;
+   }
+}
+
+
+/* - */
+@media screen and (min-width: 1900px){
+   header nav.top-nav h1 {
+      font-size: 2.5em;
+   }
+   
+   header nav.top-nav li{
+      font-size: 1.3em;
+   }
+
+   header nav.bottom-nav a {
+      font-size: 1.3em;
+   }
+
+   header div.large-screen_centralizer_top {
+      background-color: #4267B2;                       
+   }
+
+   header div.large-screen_centralizer_bottom {
+      background-color: #b8aeb9;
+   }
+}
+
+/* -------- */
+
+header nav.bottom-nav {
+   background-color: #e4d6e570;
+   padding: 20px;
+
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   
+}
+
+header nav.bottom-nav span {
+   display: inline-block;
+   color: #b8aeb9;
+   font-size: 13px;
+}
+
+header nav.bottom-nav span a {
+   color: #b8aeb9;
+}
+
+/*
+   Tudo isso para nenhum imbecíl precisar de tanta fluidez.
+   Vão acessar uma vez num computador e olhe lá... kkkkk
+*/

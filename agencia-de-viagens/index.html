@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+
+   <link rel="stylesheet" href="src/styles/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <title>Agência de viagens</title>
+</head>
+<body>
+   <header id="header">
+      <div>
+         <h1 id="logo" >
+            <a href="">
+               <i class="fa-regular fa-compass"></i>
+               <div>Agência de <span class="blue-mark">Viagens.</span></div>
+            </a>
+         </h1>
+
+         <nav>
+            <ul>
+               <li><a href="#home">Início</a></li>
+               <li><a href="#about-us">Sobre nós</a></li>
+               <li><a href="#destinations">Destinos</a></li>
+               <li><a href="#contacts">Contatos</a></li>
+            </ul>
+         </nav>
+
+         <a href="" class="default-btn">Quero viajar!</a>
+
+         <button id="navbar-btn" onclick="openNavbar()">
+            <i class="fa-solid fa-bars"></i>
+         </button>
+      </div>
+   </header>
+   <nav id="navbar">
+      <button onclick="closeNavBar()">
+         <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <ul>
+         <li><a href="#home" onclick="closeNavBar()">Início</a></li>
+         <li><a href="#about-us" onclick="closeNavBar()">Sobre nós</a></li>
+         <li><a href="#destinations" onclick="closeNavBar()">Destinos</a></li>
+         <li><a href="#footer" onclick="closeNavBar()">Contatos</a></li>
+      </ul>
+
+      <button class="default-btn">
+         Quero Viajar
+      </button>
+   </nav>
+
+   <main>
+      <section id="home">
+         <div id="home-content">
+            <h1>Agência de viagens</h1>
+            <div>
+               <h1>Faça Tours & Viagens <span class="blue-mark">Conosco!</span></h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempora. Ipsa exercitationem corporis natus nam illum repellat, vitae nostrum quibusdam laboriosam et.</p>
+            </div>
+            <a href="#about-us">Quero conhecer!</a>
+         </div>
+         <div id="home-hero">
+            <img src="src/images/plane-window.jpg" alt="">
+            <div id="figure-1"></div>
+         </div>
+      </section>
+
+      <section id="about-us">
+         <div id="about-us-1">
+            <div>
+               <img src="src/images/venice.jpg" alt="">
+               <div id="figure-2"></div>
+               <div id="descript-1">
+                  <p>Veneza - Itália</p>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <h1>Aventuras com <span class="blue-mark">Segurança</span></h1>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos corporis praesentium.</p>
+               </div>
+
+               <div id="adventure-secure">
+                  <div>
+                     <i class="fa-solid fa-shield-halved"></i>
+                     <div>
+                        <h2>Segurança em primeiro lugar</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae molestias alias odio ea qui minima possimus atque, libero voluptate.</p>
+                     </div>
+                  </div>
+                  <div>
+                     <i class="fa-solid fa-hand-holding-dollar"></i>
+                     <div>
+                        <h2><span class="blue-mark">Preços baixos</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nam atque, eius aut culpa illum eos impedit suscipit repellendus repudiandae voluptatibus minima qui.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="about-us-2">
+            <h1>Nossas <span class="blue-mark">Conquistas</span></h1>
+
+            <div id="achievements-grid">
+               <div class="achievement">
+                  <i class="fa-solid fa-face-laugh-beam"></i>
+                  <h1>4500+</h1>
+                  <h2>Viajantes felizes</h2>
+               </div>
+               <div class="achievement">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <h1>1000+</h1>
+                  <h2>Tours efetuados</h2>
+               </div>
+               <div class="achievement">
+                  <i class="fa-solid fa-star"></i>
+                  <h1>98%+</h1>
+                  <h2>Taxa de aprovação</h2>
+               </div>
+               <div class="achievement">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h1>20%</h1>
+                  <h2>Pacotes mais baratos</h2>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="destinations">
+         <div>
+            <h1>Destinos mais <span class="blue-mark">visitados</span></h1>
+            <div>
+               <h2>Around the world</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non quia, fuga itaque temporibus, ipsam id alias commodi.</p>
+            </div>
+         </div>
+         <div>
+            <div class="card">
+               <img src="src/images/kyoto.jpg" alt="">
+               <div>
+                  <div>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h1>Kyoto - Japão</h1>
+                  <p>Lorem ipsum dollor sit amet, consectetur.</p>
+               </div>
+            </div>
+            <div class="card">
+               <img src="src/images/honolulu.jpg" alt="">
+               <div>
+                  <div>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h1>Honolulu - Havaí</h1>
+                  <p>Lorem ipsum dollor sit amet, consectetur.</p>
+               </div>
+            </div>
+            <div class="card">
+               <img src="src/images/fernando-de-noronha.jpg" alt="">
+               <div>
+                  <div>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h1>Fernando de Noronha - Brasil</h1>
+                  <p>Lorem ipsum dollor sit amet, consectetur.</p>
+               </div>
+            </div>
+
+            <div class="card">
+               <img src="src/images/shanghai.jpg" alt="">
+               <div>
+                  <div>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h1>Shangai - China</h1>
+                  <p>Lorem ipsum dollor sit amet, consectetur.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+
+   <footer id="footer">
+      <img src="src/images/wave-divider.svg" alt="">
+      <div>
+         <a href="https://carlosrsluna.github.io" target="_blank">
+            &copy Carlos Luna
+         </a>
+
+         <a href="https://www.canva.com/templates/EAFvJRP-Y4E-green-orange-simple-travel-agency-presentation/" class="default-btn" target="_blank">
+            Inspirado em: DESIGN
+         </a>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+footer {
+   background-color: var(--card-font-color);
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+div.f-container {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+
+   padding: 50px;
+
+   gap: 50px;
+}
+
+div.f-container div.f-box h1 {
+   display: inline-block;
+   margin-bottom: 20px;
+   flex: auto;
+}
+
+div.f-container div.f-box span {
+   border-bottom: 3px solid var(--color-details);
+   padding-bottom: 5px;
+}
+
+div.f-container div.f-box ul{
+   list-style-type: none;
+   font-family: var(--font-h1);
+}
+
+div.f-container div.f-box ul li {
+   line-height: 1.5em;
+   font-weight: 500;
+}
+
+div.f-container div.f-box ul li a {
+   color: #fff;
+   color: var(--back-projects);
+}
+
+div.f-container div.f-box ul li a:hover {
+   text-decoration: underline;
+}
+
+div.f-container div.social ul li {
+   display: inline-block;
+   padding-right: 30px;
+   font-size: 30px;
+}
+
+div.f-container div.social ul li a {
+   color: white;
+}
+div.f-container div.social ul li a i {
+   transition: .3s ease-in-out;
+}
+div.f-container div.social ul li a i:hover {
+   transform: rotate(10deg);
+   font-size: 34px;
+}
+
+footer div.bottom-footer {
+   padding: 20px;
+   font-family: var(--font-h1);
+   text-align: center;
+   font-weight: 500;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer * {
+   color: var(--back-projects)
+}

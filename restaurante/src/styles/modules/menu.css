@@ -1,0 +1,87 @@
+#menu >h1, #menu >h2 {
+   text-align: center;
+}
+
+#menu >h1 {
+   margin-top: 60px;
+   font-size: 30px;
+   color: var(--color-primary-1);
+}
+
+#menu >h2 {
+   font-size: 34px;
+}
+
+#dishes {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   gap: 30px;
+
+   margin-top: 50px;
+}
+
+.dish {
+   max-width: 350px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+   border-radius: 15px;
+   text-align: center;
+   padding: 10px;
+}
+
+.dish h1 {
+   margin: 10px 0px;
+}
+
+.dish div:nth-child(1) {
+   text-align: right;
+   margin: -10px;
+}.dish div:nth-child(1) i{
+   background-color: var(--color-primary-1);
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 15px;
+   padding: 20px;
+
+   font-size: 22px;
+   color: white;
+}
+
+.dish p{
+   font-size: 16px;
+   color: gray;
+}
+
+.dish div:nth-child(5) {
+   margin: 20px 0px;
+}.dish div:nth-child(5) i {
+   color: var(--color-primary-3);
+   font-size: 20px;
+   margin: 0px 3px;
+}
+
+.dish div:nth-child(6){
+   font-weight: 600;
+   font-size: 18px;
+}.dish div:nth-child(6) i{
+   margin-left: 20px;
+   padding: 10px 20px;
+}
+
+@media screen and (min-width: 1550px){
+   #dishes {
+      justify-content: space-between;
+   }
+}
+
+@media screen and (max-width: 790px){
+   .dish {
+      max-width: 250px;
+   }
+}
+
+@media screen and (max-width: 590px){
+   .dish {
+      max-width: 300px;
+   }
+}

@@ -1,0 +1,35 @@
+/*
+      Yes,
+      I know,
+      it's a mess :)
+*/
+
+footer {
+   background-color: #4267B2;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   margin-top: 40px;
+}
+
+footer a, footer p, footer h1 {
+   color: white;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+footer div.bottom-footer a {
+   text-decoration: underline;
+}
+
+footer p {
+   font-weight: 500;
+   margin: 0px;
+}
+
+footer .bottom-footer {
+   background-color: #4267b22c;
+}

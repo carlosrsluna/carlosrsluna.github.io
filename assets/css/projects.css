@@ -1,0 +1,119 @@
+/*
+   Card SHADOW: box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   Card shadow hover: box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+*/
+
+div.p-container h1, div.p-container h2, div.p-container h3, div.p-container p{
+   color: var(--card-font-color);
+   font-family: var(--card-font-family);
+}
+
+div.p-container h1 {
+   margin-bottom: 10px;
+}
+
+div.p-container h2 {
+   border-bottom: 3px solid var(--card-details-color);
+   display: inline-block;
+
+   margin-top: 40px;
+}
+
+div.p-container div.cards-grid {
+   border-top: 1px solid var(--card-details-color);
+
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   
+   padding: 20px 0px;
+   gap: 50px;
+}
+
+/* -------------------------------------- */
+
+div.p-container div.cards-grid div.card {
+   display: grid;
+   grid-template-columns: 1fr;
+   max-width: min-content; /* @media */
+
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   padding: 10px;
+
+   background-color: var(--back-cards);
+   border-radius: 10px;
+}
+
+div.p-container div.cards-grid div.card:hover {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.p-container div.cards-grid div.card picture img {
+   width: 250px;
+   margin-bottom: 10px; /* @media */
+   border-radius: 5px;
+}
+
+div.p-container div.cards-grid div.card div.card-info a{
+   font-family: var(--card-font-family);
+   font-weight: 600;
+   color: white;
+   background-color: var(--card-details-color);
+   padding: 3px 10px;
+   border-radius: 20px;
+}
+
+div.p-container div.cards-grid div.card div.card-info a:hover {
+   text-decoration: underline;
+}
+
+div.p-container div.cards-grid div.card div.card-info h3 {
+   margin: 10px 0px;
+   font-size: 20px;
+}
+
+div.p-container div.cards-grid div.card div.card-info p {
+   text-align: justify;
+   font-family: var(--card-p-font-family);
+   font-weight: 500;
+   color: rgb(97, 97, 97);
+}
+
+@media screen and (max-width: 900px){
+   div.p-container div.cards-grid {
+      grid-template-columns: auto;
+   }
+
+   div.p-container div.cards-grid div.card {
+      max-width: 600px;
+      grid-template-columns: 150px auto;
+
+      border-radius: 5px;
+   }
+
+   div.p-container div.cards-grid div.card picture {
+      align-self: center;
+   }
+
+   div.p-container div.cards-grid div.card picture img {
+      width: 150px;
+      margin: 0px;
+   }
+
+   div.p-container div.cards-grid div.card div.card-info {
+      padding: 10px;
+   }
+}
+
+@media screen and (max-width: 530px) {
+   div.p-container div.cards-grid div.card {
+         grid-template-columns: 100px auto;
+      }
+
+   div.p-container div.cards-grid div.card picture img {
+         width: 100px;
+         margin: 0px;
+      }
+
+}
+
+/* Configs do modal */

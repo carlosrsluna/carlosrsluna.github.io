@@ -1,0 +1,147 @@
+#home {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+
+   min-height: calc(100vh - 83px);
+   margin-top: 83px;
+
+   gap: 20px;
+}
+/* INTRODUCTION CONFGIS */
+
+#introduction {
+   max-width: 650px;
+}
+
+#introduction h2 {
+   font-size: 14px;
+   font-weight: 500;
+
+   color: var(--color-primary-1);
+   text-transform: uppercase;
+}
+
+#introduction h1 {
+   font-size: 70px;
+   line-height: 1.3em;
+}
+
+#introduction h1 span {
+   color: var(--color-primary-1)
+}
+
+#introduction p {
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+#introduction > a {
+   font-size: 18px;
+   font-weight: 400;
+}
+
+#introduction > a:first-of-type {
+   margin-right: 30px;
+   font-weight: 500;
+}
+
+#introduction > a{
+   background-color: #fff;
+   color: #000;
+   padding: 12px 15px;
+   padding-left: 7px;
+}#introduction > a i {
+   background-color: var(--color-primary-1);
+   border-radius: 8px;
+   padding: 8px;
+   color: #fff;
+   font-size: 20px;
+}#introduction > a:first-of-type {
+   background-color: var(--color-primary-1);
+   color: #fff;
+}#introduction>a:first-of-type i {
+   background-color: #fff;
+   color: var(--color-primary-1);
+}
+
+#introduction > div{
+   margin-top: 30px;
+   display: flex;
+   gap: 20px;
+
+   justify-content: flex-start;
+}
+#introduction>div a {
+   font-size: 22px;
+   display: inline-block;
+   padding: 5px 15px;
+
+   background-color: #fff;
+   color: #000;
+}
+
+/* HERO, IMG CONFIGS */
+#hero {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: var(--color-primary-2);
+
+   border-bottom-left-radius: 20%;
+   border-bottom-right-radius: 40%;
+   border-top-left-radius: 30%;
+   border-top-right-radius: 10%;
+}
+
+#hero img {
+   width: 80%;
+}
+
+@media screen and (max-width: 1300px) {
+   #introduction {
+         max-width: 550px;
+      }
+   #introduction h1 {
+      font-size: 60px;
+   }
+}
+
+@media screen and (max-width: 870px){
+   #home {
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+
+   #introduction{
+      text-align: center;
+   }
+
+   #introduction > div {
+      justify-content: center;
+   }
+
+   #hero {
+      display: none;
+   }
+} 
+
+@media screen and (max-width: 460px) {
+   #introduction > a, #introduction > a i {
+      font-size: 12px;
+   }
+
+   #introduction>div a {
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   #introduction > a, #introduction > a i {
+      font-size: 10px;
+   }
+}

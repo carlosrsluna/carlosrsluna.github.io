@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('modules/header.css');
+@import url('modules/home.css');
+@import url('modules/about-us.css');
+@import url('modules/destinations.css');
+@import url('modules/footer.css');
+
+* {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   list-style-type: none;
+   text-decoration: none;
+   color: #000;
+
+   font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+   --color-primary-1: #1bbc9b;
+   --color-primary-2: #f4931e;
+   --color-primary-3: #1bbc9ccf;
+   --color-primary-4: #f4941eb0;
+
+   overflow-x: hidden;
+}
+
+body, html {
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+main {
+   padding: 10px;
+
+   max-width: 2000px;
+   margin: auto;
+}
+
+.default-btn {
+   border: none;
+
+   padding: 10px 20px;
+   background-color: var(--color-primary-1);
+   color: #fff;
+   border-radius: 10px;
+
+   font-weight: 700;
+   font-size: 16px;
+
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+   transition: .3s ease-in-out;
+}.default-btn:hover {
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   padding: 10px 22px;
+}
+
+.blue-mark {
+   color: var(--color-primary-1);
+}
+
+.orange-mark {
+   color: var(--color-primary-2)
+}

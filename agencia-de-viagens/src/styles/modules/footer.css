@@ -1,0 +1,40 @@
+footer {
+   width: 100%;
+   background-color: var(--color-primary-2);
+   margin-top: 100px;
+}
+
+footer > img {
+   margin-top: -10px;
+}
+
+footer > div {
+   max-width: 2000px;
+   width: 100%;
+   margin: auto;
+   padding: 30px;
+   padding-bottom: 40px;
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-flow: row wrap;
+   row-gap: 20px;
+   column-gap: 20px;
+}
+
+footer>div a {
+   font-weight: 500;
+   font-size: 18px;
+   color: white;
+}
+
+footer>div a:hover {
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 428px) {
+   footer>div {
+      justify-content: center;
+   }
+}

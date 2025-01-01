@@ -1,0 +1,261 @@
+/*
+      Yes,
+      I know,
+      it's a mess :)
+*/
+
+@import url(modules/reset.css);
+@import url(modules/header.css);
+@import url(modules/footer.css);
+
+html {
+   scroll-behavior: smooth;
+}
+
+section.central-section {
+   min-width: 65vw;
+   max-width: 750px;
+   margin: auto;
+
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   gap: 20px;
+   grid-auto-rows: auto;
+
+   padding: 10px;
+}
+
+section.central-section header.meta-article {
+   grid-column: 1 / span 2;
+}
+
+section.central-section header.meta-article h1 {
+   font-size: 2em;
+}
+
+section.central-section header.meta-article p {
+   font-size: 0.8em;
+   color: rgba(0, 0, 0, 0.8);
+}
+
+section.central-section header.meta-article p a {
+   color: #4267B2;
+   font-weight: 600;
+}
+section.central-section header.meta-article hr {
+   margin-bottom: 40px;
+}
+
+/* ---------- Seção do artigo -------- */
+
+
+section.central-section article p{
+   text-align: justify;
+}
+
+section.central-section article h1, 
+section.central-section article h2 {
+   font-weight: 600;
+}
+
+section.central-section article figure {
+   width: 100%;
+}
+
+section.central-section article figure img {
+   width: 100%;
+   border-radius: 20px;
+}
+
+section.central-section article figure figcaption {
+   font-size: 0.8em;
+   color: rgba(0, 0, 0, 0.8);
+   margin: 0px 0px 0px 20px;
+   padding-left: 10px;
+   border-left: 3px solid #4267B2;
+}
+
+/*  CONFIGS DO ASIDE */
+
+section.central-section aside {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+}
+
+section.central-section aside div.aside-card{
+   background-color: #e4d6e570;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+section.central-section aside div.aside-card h1 {
+   margin: 10px 0px;
+}
+
+section.central-section aside div.aside-card h2 {
+   font-size: 1em;
+}
+
+section.central-section aside div.aside-card li,
+section.central-section aside div.aside-card li a {
+   color: #6a636a;
+   text-decoration: none;
+   font-size: 0.9em;
+}
+
+section.central-section aside div.aside-card li a:hover {
+   text-decoration: underline;
+}
+
+section.central-section aside div.aside-card hr {
+   margin: 10px 0px;
+}
+
+/* confgis do card lateral */
+
+section.central-section aside div.aside-card-article img {
+   width: 100%;
+}
+
+section.central-section aside div.aside-card-article h2{
+   font-size: 0.8em;
+   margin: 5px 0px;
+   text-align: justify;
+}
+
+section.central-section aside div.aside-card-article h1 {
+   margin: 0px;
+}
+
+section.central-section aside div.aside-card-article hr {
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+section.central-section aside div.aside-card-article span a {
+   background-color: #4267B2;
+   font-size: 0.8em;
+   padding: 0px 10px;
+   border-radius: 20px;
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+}
+section.central-section aside div.aside-card-article span a:hover {
+   text-decoration: underline;
+}
+
+section.central-section aside div.aside-card-article h1 a {
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.8);
+}
+
+section.central-section aside div.aside-card-article h1 a:hover {
+   text-decoration: underline;
+}
+
+/* ULTIMA SEÇÃO */
+
+body>section>div.more-articles {
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+body>section>div .card {
+   flex-basis: 300px;
+}
+
+body>section>div .card img{
+   width: 100%;
+}
+
+body>section>div .card span {
+   background-color: #4267B2;
+   padding: 0px 20px;
+   border-radius: 20px;
+   font-size: 0.8em;
+
+   font-weight: 500;
+}
+
+body>section>div .card span a{
+   color: white;
+   text-decoration: none;
+}
+
+body>section>div .card h1 {
+   font-size: 1.1em;
+   margin: 5px 0px;
+}
+
+div.more-articles div.card div.card-text h1 a{
+   color: rgba(0, 0, 0, 0.8);
+   text-decoration: none;
+}
+
+div.more-articles div.card div.card-text h1 a:hover {
+   text-decoration: underline;
+}
+
+body>section>div .card h2 {
+   font-size: 0.8em;
+   margin: 5px 0px;
+}
+
+@media screen and (max-width: 700px) {
+   section.central-section {
+      display: block;
+   }
+
+   body>section>article>p {
+      text-indent: 20px;
+   }
+
+   section.central-section aside {
+      display: none;
+   }
+
+   .central-section .more-articles {
+      display: flex;
+      flex-flow: row wrap;
+   }
+
+   .central-section .card {
+      display: flex;
+   }
+
+   .central-section .card picture {
+      width: 90%;
+
+      display: flex;
+      align-items: center;
+   }
+
+   .central-section .card picture img {
+      width: 100%;
+   }
+
+   .central-section .card .card-text {
+      padding: 10px;
+      text-align: justify;
+   }
+}
+
+/* botão */
+button {
+   padding: 10px;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   background-color: #03030345;
+   border-radius: 50%;
+   border: 0px;
+
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+}

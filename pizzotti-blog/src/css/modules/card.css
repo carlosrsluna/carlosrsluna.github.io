@@ -1,0 +1,91 @@
+/*
+      Yes,
+      I know,
+      it's a mess :)
+*/
+
+div.card {
+   padding: 15px;
+   flex-basis: 300px;
+   text-align: justify;
+}
+
+div.card:hover {
+   padding: 10px;
+}
+
+div.card img{
+   width: 100%;
+}
+
+div.card-text {
+   padding: 10px;
+   
+}
+
+div.card div.card-text span {
+   display: inline-block;
+   background-color: #4267B2;
+   padding: 0px 10px;
+   border-radius: 20px;
+}
+
+div.card div.card-text span a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 0.9em;
+}
+
+div.card div.card-text span a:hover {
+   text-decoration: underline;
+}
+
+div.card div.card-text h1 {
+   margin: 10px 0px;
+   font-size: 1.2em;
+}
+
+div.card div.card-text h1 a {
+   color: rgba(0, 0, 0, 0.8);
+   text-decoration: none;
+}
+
+div.card div.card-text h1 a:hover {
+   text-decoration: underline;
+}
+
+div.card div.card-text h2 {
+   margin: 10px 0px;
+   font-size: 0.9em;
+}
+
+@media screen and (max-width: 700px) {
+   div.card {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+   }
+
+   div.card picture {
+      /*width: 80%;*/
+      display: flex;
+      align-items: center;
+   }
+
+   div.card picture img {
+      width: 100px;
+   }
+
+   div.card div.card-text span a {
+      font-size: 0.9em;
+   }
+
+   div.card div.card-text h1 {
+      font-size: 1.1em;
+   }
+
+   div.card div.card-text h2 {
+      font-size: 0.9em;
+   }
+}

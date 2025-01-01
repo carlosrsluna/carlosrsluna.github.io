@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('modules/header_nav_bar.css');
+@import url('modules/home.css');
+@import url('modules/menu.css');
+@import url('modules/testimonials.css');
+@import url('modules/footer.css');
+
+:root {
+   --color-primary-1: #EA1D2C;
+   --color-primary-2: #ea1d2b4d;
+   --color-primary-3: #ffe234;
+
+   --color-background: #fff9ea;
+}
+
+* {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   
+   text-decoration: none;
+   list-style-type: none;
+   font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+   background-color: var(--color-background);
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+body {
+   padding: 0px 20px;
+}
+
+main {
+   max-width: 2000px;
+   margin: auto;
+}
+
+.default-btn {
+   border: none;
+   padding: 7px 18px;
+   border-radius: 10px;
+
+   background-color: var(--color-primary-1);
+
+   font-weight: 500;
+   color: white;
+
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.default-btn:hover {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
